@@ -1,0 +1,172 @@
+body {
+            background: #000;
+            color: white;
+            font-family: 'Oswald', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .main-box {
+            border: 2px solid #222;
+            border-radius: 20px;
+            padding: 30px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.9),
+                    rgba(0, 0, 0, 0.9)),
+                url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+        }
+
+        .title {
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+            position: relative;
+            
+        }
+
+        .title::before {
+            left: 5%;
+            width: 35pc;
+        }
+
+        .title::after {
+            right: 5%;
+            width: 35pc;
+        }
+
+        .fight-box {
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .red-side {
+            background: linear-gradient(135deg, #700000, #d40000);
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .blue-side {
+            background: linear-gradient(135deg, #002a7a, #005eff);
+            border: 2px solid dodgerblue;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .corner {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .fighter {
+            font-size: 65px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .team {
+            color: gold;
+            font-size: 35px;
+            margin-top: 10px;
+        }
+
+        .point {
+            font-size: 120px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .point-text {
+            font-size: 35px;
+        }
+
+        .vs {
+            font-size: 120px;
+            color: gold;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .winner-box {
+            margin-top: 30px;
+            border: 10px solid gold;
+            border-radius: 20px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            
+        }
+
+        .winner-title {
+            font-size: 70px;
+            color: gold;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .winner-name {
+            font-size: 120px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .winner-bottom {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .winner-label {
+            background: red;
+            padding: 10px 40px;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 50px;
+        }
+
+        .winner-score {
+            color: gold;
+            font-size: 70px;
+            margin-left: 20px;
+        }
+
+        .star {
+            color: gold;
+            font-size: 50px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        @media(max-width:768px) {
+
+            .title {
+                font-size: 35px;
+            }
+
+            .fighter {
+                font-size: 35px;
+            }
+
+            .point {
+                font-size: 70px;
+            }
+
+            .winner-name {
+                font-size: 60px;
+            }
+
+            .vs {
+                font-size: 70px;
+                margin: 20px 0;
+            }
+
+        }
+          
+        .btn-warning {
+    font-weight: bold;
+    border-radius: 15pc;
+    box-shadow: 0 0 20px gold;
+    transition: 0.3s;
+}

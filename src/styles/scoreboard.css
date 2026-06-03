@@ -1,0 +1,187 @@
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: white;
+}
+
+
+
+.container-fluid {
+  min-height: 100vh;
+}
+
+.container-box {
+  border: 2px solid #444;
+  border-radius: 20px;
+  padding: 20px;
+  min-height: calc(100vh - 40px);
+}
+
+
+
+.title {
+  font-size: clamp(24px, 4vw, 70px);
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.red-card {
+  background: linear-gradient(
+    to bottom,
+    #d10000,
+    #330000
+  );
+  border: 2px solid red;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.blue-card {
+  background: linear-gradient(
+    to bottom,
+    #004fd1,
+    #001533
+  );
+  border: 2px solid dodgerblue;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.center-card {
+  background: #111;
+  border: 2px solid gray;
+  border-radius: 20px;
+  height: 100%;
+}
+
+
+
+.label {
+  font-size: clamp(18px, 2vw, 40px);
+  font-weight: bold;
+}
+
+.name {
+  font-size: clamp(22px, 3vw, 60px);
+  font-weight: bold;
+  word-break: break-word;
+}
+
+.team {
+  color: gold;
+  font-size: clamp(14px, 1.5vw, 30px);
+}
+
+.score-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  font-size: clamp(14px, 1.3vw, 25px);
+}
+
+
+.kelas {
+  background: gold;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: clamp(14px, 1.5vw, 28px);
+  font-weight: bold;
+}
+
+.timer {
+  font-size: clamp(40px, 6vw, 120px);
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.status {
+  color: lime;
+  border: 2px solid lime;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: clamp(14px, 1.2vw, 24px);
+}
+
+
+
+.btn-warning {
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 0 20px gold;
+  transition: 0.3s;
+}
+
+.btn-warning:hover {
+  transform: scale(1.05);
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* untuk tampilan tablet */
+
+@media (max-width: 992px) {
+  .title {
+    margin-top: 10px;
+  }
+
+  .timer {
+    margin: 20px 0;
+  }
+}
+
+/* untuk tampilan hp */
+
+@media (max-width: 768px) {
+  .container-box {
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .timer {
+    font-size: 50px;
+  }
+
+  .kelas {
+    font-size: 16px;
+  }
+
+  .score-row {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .status {
+    font-size: 14px;
+  }
+}
+
+/* buat tampilan tipi */
+
+@media (min-width: 1920px) {
+  .container-box {
+    padding: 40px;
+  }
+
+  .score-row {
+    padding: 20px;
+  }
+}
